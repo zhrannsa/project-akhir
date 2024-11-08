@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+    <link rel="stylesheet" href="lampu.css">  
+    <script src="lampu.js"></script>  
+    <script src="lampu2.js"></script> 
+</head>                                                         
+<body>  
+<header>  
+    <nav>  
+        <div class="Logo"><b>Layanan Kami</b></div>  
+        <ul>   
+            <li><a href="Pepeq.html" class="button">Halaman 1</a></li>  
+        </ul>  
+    </nav>  
+</header>  
+ 
+<div class="Container" > 
+    <div> 
+      <div class="Container-lampu1">  
+        <!-- Gambar Lampu 1 --> 
+        <img id="myImage1" src="https://www.w3schools.com/js/pic_bulboff.gif" > 
+        <span id="text">lampu mati</span>
+        <span id="jam"></span>
+        <p> 
+          <button type="button" onclick="light()">Nyalakan lampu 1</button>  
+        </p>  
+      </div>  
+    </div> 
+   
+    <div> 
+      <div class="Container-lampu2">  
+        <!-- Gambar Lampu 2 --> 
+        <img id="myImage2" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+        <span id="text2">lampu mati</span>
+        <span id="jam2"></span> 
+        <p class="tombol">  
+          <button type="button" onclick="light1()">Nyalakan lampu 2</button>  
+          <button type="button" onclick="light2()">Matikan lampu 2</button> 
+        </p>  
+      </div>  
+    </div> 
+  </div> 
+   
+  
+   
+   
+ 
+<!-- Ques Number --> 
+<div class="game-container"> 
+    <h2>Guess the Number (1-10)</h2> 
+    <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="10"> 
+    <br> 
+    <button onclick="checkGuess()">Guess</button> 
+    <div class="result" id="result"></div> 
+</div> 
+ 
+ 
+<!-- Check Umur --> 
+<div class="check"> 
+    <h2>Check Umur</h2> 
+    <input type="number" id="umur" placeholder="Masukan Umur mu"> 
+    <button onclick="checkUmur()">Check</button> 
+    <div class="result" id="resultUmur"></div>  
+</div> 
+ 
+<!-- Calculator --> 
+<div class="calculator">  
+    <h2 class="h2">Calculator</h2>  
+    <div class="flex">  
+        <input type="number" id="num1" placeholder="Masukkan angka pertama">  
+        <input type="number" id="num2" placeholder="Masukkan angka kedua">  
+    </div>  
+    <div>  
+        <select id="operation">  
+            <option value="add">+</option>  
+            <option value="subtract">-</option>  
+            <option value="multiply">x</option>  
+            <option value="divide">÷</option>  
+        </select>  
+        <button onclick="calculate()">Hitung</button>  
+    </div>  
+    <h3>Hasil: <span id="resultCalculator"></span></h3> 
+</div> 
+ 
+<!-- Temperature Converter --> 
+<div class="converter"> 
+    <h2>Temperature Converter</h2> 
+    <input type="number" id="inputTemperature" placeholder="Masukkan suhu"> 
+    <select id="conversionType"> 
+        <option value="CtoF">Celsius to Fahrenheit</option> 
+        <option value="CtoK">Celsius to Kelvin</option> 
+        <option value="FtoC">Fahrenheit to Celsius</option> 
+        <option value="FtoK">Fahrenheit to Kelvin</option> 
+        <option value="KtoC">Kelvin to Celsius</option> 
+        <option value="KtoF">Kelvin to Fahrenheit</option> 
+    </select> 
+    <button onclick="convertTemperature()">Convert</button> 
+    <b><p class="Result" id="resultTemperature"></p></b> 
+</div> 
+ 
+ 
+</body>  
+</html>
